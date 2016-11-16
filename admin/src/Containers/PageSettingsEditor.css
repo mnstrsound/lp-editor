@@ -1,0 +1,9 @@
+.save-btn {
+    margin-right: 12px;
+}
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}

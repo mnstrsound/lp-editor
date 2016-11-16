@@ -1,0 +1,44 @@
+.files {
+
+}
+.files:before,
+.files:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+.file {
+    position: relative;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.file img {
+    position: absolute;
+    max-width: 98%;
+    max-height: 98%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.input-file {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+.add-file {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+.select-button {
+    margin-right: 12px;
+}
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: 'pointer';
+}

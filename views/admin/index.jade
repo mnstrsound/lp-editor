@@ -1,0 +1,43 @@
+html
+    head
+        meta(charset="UTF-8")
+        title
+            |Главная страница
+        link(rel='stylesheet', href='admin/bootstrap.min.css')
+        script(src='./src/tinymce/tinymce.min.js')
+body
+    script.
+        var template = !{template};
+        var state = {
+            Markup: {
+                editor: {
+                    state: null,
+                    currentNodePath: null,
+                    loading: false,
+                    snackbar: {
+                        show: false,
+                        text: ''
+                    }
+                },
+                nodes: template.Nodes
+            },
+            PageSettings: {
+                editor: {
+                    state: null
+                },
+                settings: template.PageSettings
+            },
+            Activated: true,
+            Backups: ''
+        };
+        var head = document.getElementsByTagName('head')[0];
+        state.PageSettings.settings.links.forEach(function (item, index) {
+            var style = document.createElement('link');
+
+            style.rel = item.rel;
+            style.href = item.href;
+
+            head.appendChild(style);
+        });
+    #root
+    script(src='build/bundle.js')

@@ -1,0 +1,108 @@
+doctype html
+html
+    head
+        title
+            |Шаблон "Первая кровь"
+        link(rel='stylesheet', href='/public/static/css/common.css')
+        link(rel='stylesheet', href='/public/static/css/template1.css')
+        link(rel='stylesheet', href='/public/static/css/bootstrap.min.css')
+        meta(name='keywords', content="Ключевые слова")
+        meta(name='description', content="Описание говно")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(charset="utf-8")
+    body
+        .wrapper
+            section.main(data-editor="section")
+                .container.main__container
+                    .row.main__row
+                        .col-sm-12.col-md-6
+                            img(src="/public/static/img/template1/logo.png", alt="Logo", title="Logo", data-editor="image")
+                        .col-sm-12.col-md-6
+                            ul.nav
+                                li.nav__item
+                                    a.nav__link(href="#", data-editor="link")
+                                        |Home
+                                li.nav__item
+                                    a.nav__link(href="#", data-editor="link")
+                                        |Services
+                                li.nav__item
+                                    a.nav__link(href="#", data-editor="link")
+                                        |Portfolio
+                                li.nav__item
+                                    a.nav__link(href="#", data-editor="link")
+                                        |About
+                                li.nav__item
+                                    a.nav__link(href="#", data-editor="link")
+                                        |Contact
+                    h2.main__desc(data-editor="text")
+                        |Welcome to our studio
+                    h1.main__title(data-editor="text")
+                        |It's nice to meet you
+                    a.main__link(data-editor="link")
+                        |Tell me more
+            section.portfolio(data-editor="section")
+                .container.portfolio__container
+                    h2.portfolio__title(data-editor="text")
+                        |Portfolio
+                    h3.portfolio__desc(data-editor="text")
+                        |Proin iaculis purus consequat sem cure.
+                    .row
+                        .col-sm-12.col-sm-6.col-md-4
+                            .portfolio__item
+                                .portfolio__item-img
+                                h4.portfolio__item-title(data-editor="text")
+                                    |Заголовок
+                                p.portfolio__item-desc(data-editor="text")
+                                    |Описание
+                        .col-sm-12.col-sm-6.col-md-4
+                            .portfolio__item
+                                .portfolio__item-img
+                                h4.portfolio__item-title(data-editor="text")
+                                    |Заголовок
+                                p.portfolio__item-desc(data-editor="text")
+                                    |Описание
+                        .col-sm-12.col-sm-6.col-md-4
+                            .portfolio__item
+                                .portfolio__item-img
+                                h4.portfolio__item-title(data-editor="text")
+                                    |Заголовок
+                                p.portfolio__item-desc(data-editor="text")
+                                    |Описание
+                        .col-sm-12.col-sm-6.col-md-4
+                            .portfolio__item
+                                .portfolio__item-img
+                                h4.portfolio__item-title(data-editor="text")
+                                    |Заголовок
+                                p.portfolio__item-desc(data-editor="text")
+                                    |Описание
+                        .col-sm-12.col-sm-6.col-md-4
+                            .portfolio__item
+                                .portfolio__item-img
+                                h4.portfolio__item-title(data-editor="text")
+                                    |Заголовок
+                                p.portfolio__item-desc(data-editor="text")
+                                    |Описание
+                        .col-sm-12.col-sm-6.col-md-4
+                            .portfolio__item
+                                .portfolio__item-img
+                                h4.portfolio__item-title(data-editor="text")
+                                    |Заголовок
+                                p.portfolio__item-desc(data-editor="text")
+                                    |Описание
+            section.footer(data-editor="section")
+                .container.footer__container
+                    h2.footer__title(data-editor="text")
+                        |Contact us
+                    h3.footer__desc(data-editor="text")
+                        |Proin iaculis purus consequat sem cure.
+                form.footer__form(data-editor="form")
+                    .container
+                        .row
+                            .col-xs-12.col-md-6
+                                input(type="text", name="name", placeholder="input your name", data-editor="inputText").footer__input
+                                input(type="text", name="email", placeholder="input your email", data-editor="inputText").footer__input
+                                input(type="text", name="phone", placeholder="input your phone", data-editor="inputText").footer__input
+                            .col-xs-12.col-md-6
+                                textarea(placeholder="input your message").footer__textarea
+                        .row
+                            input(type="button", value="Send message").footer__submit
