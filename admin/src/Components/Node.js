@@ -94,7 +94,7 @@ export default class Node extends React.Component {
             verticalAlign: 'middle',
             cursor: 'pointer'
         };
-        console.log(`render: ${state.get('id')}`)
+        // console.log(`render: ${state.get('id')}`)
         return (
             <div className={cls(styles.node, state.get('id'), state.get('cls').toJS())} >
                 {state.get('editor') ?

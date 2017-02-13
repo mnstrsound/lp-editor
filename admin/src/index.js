@@ -4,7 +4,7 @@ import {fromJS} from 'immutable';
 import {createStore, applyMiddleware, compose} from 'redux';
 import thunk from 'redux-thunk';
 import {Provider} from 'react-redux';
-import {combineReducers} from 'redux-immutable';
+// import {combineReducers} from 'redux-immutable';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 import reducer from './Reducers';
