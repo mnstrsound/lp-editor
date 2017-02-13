@@ -4,7 +4,7 @@ import serve from 'koa-static';
 import bodyParser from 'koa-bodyparser';
 import indexRouter from './routes';
 
-const port = 3000;
+const port = process.env.PORT || 5000;
 const app = new Koa();
 
 app.use(serve('.'));
