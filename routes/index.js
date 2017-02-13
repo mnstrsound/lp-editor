@@ -10,12 +10,12 @@ router.get('/', async ctx => {
 });
 
 router.post('/api', ctx => {
-    fs.writeFileSync('index.html', new PageCreator(ctx.request.body.data).makeMarkup(), 'utf8', function (err) {
+    fs.writeFileSync('ready.html', new PageCreator(ctx.request.body.data).makeMarkup(), 'utf8', function (err) {
        if (err) {
            console.log(err);
        }
     });
-    ctx.body = 'index.html';
+    ctx.body = 'ready.html';
 });
 
 export default router;
